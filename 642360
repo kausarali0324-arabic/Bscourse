@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fehm-e-Quran-1 - University of Swabi</title>
+    <!-- Google Fonts for Urdu (Nastaliq) and Arabic (Amiri) -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0d4a36;
+            --bg-color: #f4f6f9;
+            --card-bg: #ffffff;
+            --text-color: #1b4332;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 15px;
+            direction: rtl;
+            text-align: right;
+            font-family: 'Noto Nastaliq Urdu', serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Back Button Style */
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            background-color: #e2e8f0;
+            color: var(--text-color);
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            direction: ltr;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Header Box */
+        .header-box {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 18px 15px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            direction: ltr;
+        }
+
+        .logo-area {
+            background: white;
+            border-radius: 12px;
+            width: 65px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .logo-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .title-area {
+            text-align: center;
+            padding: 0 8px;
+            flex-grow: 1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .title-area h1 {
+            font-size: 0.85rem;
+            font-weight: bold;
+            line-height: 1.2;
+            letter-spacing: -0.3px;
+            margin-bottom: 3px;
+        }
+
+        .title-area p {
+            font-size: 0.75rem;
+            opacity: 0.95;
+            font-weight: 400;
+        }
+
+        .welcome-box {
+            background: white;
+            color: var(--text-color);
+            padding: 8px 10px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 0.7rem;
+            font-weight: 600;
+            line-height: 1.2;
+            width: 95px;
+            flex-shrink: 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Tables Styling */
+        .content-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--card-bg);
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-size: 0.85rem;
+        }
+
+        .content-table th, .content-table td {
+            border: 1px solid #cbd5e1;
+            padding: 10px 12px;
+            vertical-align: middle;
+            line-height: 1.8;
+        }
+
+        .content-table th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Arabic/English Font Class */
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 1.05rem;
+            font-weight: bold;
+        }
+
+        .section-heading {
+            background-color: #e2e8f0;
+            font-weight: bold;
+            text-align: center;
+            color: var(--primary-color);
+            padding: 8px;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.8rem;
+            color: #555;
+            line-height: 1.4;
+            direction: ltr;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Back Button to Semester 1 Dashboard -->
+        <a href="Semester1_dashboard.html" class="back-btn">&larr; Back</a>
+
+        <!-- Header -->
+        <div class="header-box">
+            <div class="logo-area">
+                <img src="uni.jpg" alt="Logo" onerror="this.style.display='none'; this.parentElement.innerHTML='<span style=\'color:#0d4a36; font-weight:bold; font-size:0.6rem;\'>LOGO</span>'">
+            </div>
+            <div class="title-area">
+                <h1>DEPARTMENT OF ISLAMIC AND ARABIC STUDIES</h1>
+                <p>University of Swabi</p>
+            </div>
+            <div class="welcome-box">
+                Welcome, Dr. Syar Ali Shah
+            </div>
+        </div>
+
+        <!-- Course Header Info Table -->
+        <table class="content-table">
+            <tr>
+                <td style="width: 20%; font-weight: bold;">Course Name</td>
+                <td style="width: 45%; font-weight: bold;"><span class="arabic-text">Fehm-e-Quran-1</span></td>
+                <td style="width: 20%; font-weight: bold;">Code: ISL-122</td>
+                <td style="width: 15%; font-weight: bold;" class="text-center">1 (0-1)=3ch</td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Introduction</td>
+                <td colspan="3">
+                    یہ کورس ترجمہ قرآن کو سمجھنے کے لئے تیار کیا گیا ہے، جس میں نصوص قرآن کو مفردات اور جملوں کی صورت میں پڑھایا جائے گا۔
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Objectives</td>
+                <td colspan="3">
+                    طلبہ میں قرآن فہمی کے مشکلات حل کرایا جائے۔ قرآن سیکھنے کے لئے ایک مضبوط بنیاد فراہم ہو جائے گا۔
+                </td>
+            </tr>
+        </table>
+
+        <!-- Weekly Schedule Table -->
+        <table class="content-table">
+            <tr>
+                <th style="width: 15%;">نمبر شمار</th>
+                <th style="width: 65%;">موضوع</th>
+                <th style="width: 20%;">ہفتہ</th>
+            </tr>
+            <tr>
+                <td class="text-center">1</td>
+                <td>مفردات القرآن (مذکر)</td>
+                <td class="text-center">1<sup>st</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">2</td>
+                <td>مفردات القرآن (مونث)</td>
+                <td class="text-center">2<sup>nd</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">3</td>
+                <td>مفردات القرآن (جمع مذکر)۔ قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">3<sup>rd</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">4</td>
+                <td>مفردات القرآن (جمع مؤنث)۔ قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">4<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">5</td>
+                <td>حرف عطف (الکاب و اللھم)۔ قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">5<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">6</td>
+                <td>اسم اشارہ قریب مذکر (کتاب... ھذا کتاب)۔ قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">6<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">7</td>
+                <td>اسم اشارہ بعید مذکر (کتاب... ذلک کتاب)۔ قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">7<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">8</td>
+                <td>اسم اشارہ مونث (آیۃ... ھذہ / تلک آیۃ)۔ قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">8<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">9</td>
+                <td>کتاب... لكتاب اور كبير.... اكبر قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">9<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">10</td>
+                <td>كتاب... اِن الكتاب اور الكتاب... لِلكتاب قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">10<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">11</td>
+                <td>الكتاب... فی الكتاب اور الكتاب... علی الكتاب قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">11<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">12</td>
+                <td>الكتاب... من الكتاب اور الكتاب... إلى الكتاب قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">12<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">13</td>
+                <td>الكتاب... بالکتاب اور الكتاب... لا الكتاب قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">13<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">14</td>
+                <td>الكتاب... إلا الكتاب اور الكتاب... والکتاب قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">14<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">15</td>
+                <td>الكتاب... أن الكتاب اور رسولاً.... كان رسولاً قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">15<sup>th</sup></td>
+            </tr>
+            <tr>
+                <td class="text-center">16</td>
+                <td>عظیم۔ کبیر۔ مبین۔ كريم۔ شدید۔ كثير۔ بعید۔ قليل۔ واحد۔ فہیم۔ قرآن قرآنی آیات کا عملی مشق</td>
+                <td class="text-center">16<sup>th</sup></td>
+            </tr>
+
+            <!-- Recommended Books Section -->
+            <tr>
+                <td colspan="3" class="section-heading">مطالعاتی کتب</td>
+            </tr>
+            <tr>
+                <td class="text-center" style="font-weight: bold;">اول</td>
+                <td colspan="2">معلم القرآن = پروفیسر عبدالرحمن بشیر</td>
+            </tr>
+            <tr>
+                <td class="text-center" style="font-weight: bold;">دوم</td>
+                <td colspan="2">فہم قرآن (حصہ اول) = ڈاکٹر سید سیار علی شاہ، شعبہ اسلامیات وعربی، جامعہ صوابی</td>
+            </tr>
+        </table>
+
+        <footer>
+            <p>&copy; 2026 Department of Islamic Studies, University of Swabi</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
